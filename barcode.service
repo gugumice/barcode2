@@ -1,0 +1,13 @@
+[Unit]
+Description=Barcode printer
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -u /opt/barcode/bcprn.py
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
