@@ -1,4 +1,5 @@
 # barcode2
+
 #Disable WIFI&Bluetooth in /boot/config.txt
 dtoverlay=pi3-disable-wifi
 dtoverlay=pi3-disable-bt
