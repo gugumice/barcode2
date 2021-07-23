@@ -22,3 +22,6 @@ sudo apt-get install python3-pip
 sudo pip3 install pycups
 sudo pip3 install pyserial
 sudo pip3 install zebra
+
+#Using barcode.service
+https://www.raspberrypi.org/documentation/linux/usage/systemd.md
