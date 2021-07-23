@@ -4,11 +4,12 @@ dtoverlay=pi3-disable-wifi
 dtoverlay=pi3-disable-bt
 #Install CUPS
 sudo apt-get install cups cups-bsd libcups2-dev
-#Enable CPOS access
+#Enable CUPS access
 sudo cupsctl --remote-admin --remote-any
-#Add user to lpadmin group
+#Add user (pi) to lpadmin group
 sudo usermod -a -G lpadmin pi
 sudo service cups restart
+
 #Create watchdog group & add user (pi) to it
 sudo addgroup watchdog
 sudo usermod -a -G watchdog pi
