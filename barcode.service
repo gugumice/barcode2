@@ -4,6 +4,7 @@ After=network.target
 
 [Service]
 ExecStart=/usr/bin/python3 -u /opt/barcode/bcprn.py
+WorkingDirectory=/opt/barcode
 StandardOutput=inherit
 StandardError=inherit
 Restart=always
