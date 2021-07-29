@@ -53,6 +53,9 @@ def scanBC(obj_z):
             else:
                 printBC(lbl_prefix+bc_buffer,obj_z)
                 lbl_prefix=''
+    if wd is not None:
+        print('V',file = wd, flush = True)
+    logging.error('Barcode reader error')
 def printBC(bar_code,obj_z):
     if obj_z.running:
         logging.info('Printing label {}'.format(bar_code))
